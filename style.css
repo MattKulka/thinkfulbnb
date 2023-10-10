@@ -26,12 +26,17 @@ section {
 }
 
 section.alternate-background {
-  background-color: #00a699;
-  color: #fff;
+  
+  background-color: #040507;
+  color: #f7f3f3;
+}
+#about p{
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -53,15 +58,15 @@ main img {
 /* -------  Navigation ------- */
 
 header {
-  background-color: #ff385c;
+  background-color: #0d4211;
   padding: 20px 20px 0 20px;
   text-align: center;
 }
 
 .logo {
-  font-family: "Pangolin", cursive;
+  font-family: fangsong ;
   font-size: 72px;
-  color: #fff;
+  color: #ffffff;
 }
 
 header nav ul li {
@@ -69,7 +74,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   padding: 0 20px 0 0;
 }
@@ -81,33 +86,57 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  border: 2px solid #ff385c;
+  border: 2px double rgb(0, 0, 0);
   padding: 10px;
 }
 
 form label {
   font-weight: bold;
+  color: white;
 }
 
 form select,
 form input {
+
   margin-bottom: 20px;
   width: 180px;
 }
 
 form button {
-  background-color: #ff385c;
+  background-color: rgb(0, 0, 0);
   border: none;
-  color: #fff;
+  color: #fcfcfc;
   font-size: 24px;
   padding: 15px;
   width: 100%;
 }
 
+#menu{
+  display: flex;
+}
+
+#stay{
+  background-color: #5f6063;
+}
+
+#ideas{
+  background-color: #5f6063;
+}
+
+#ideas h3{
+  color: white;
+  font-size: 30px;
+}
+
+#ideas h2{
+  color: white;
+  font-size: 40px;
+}
+
 /* -------  Footer ------- */
 
 footer {
-  background-color: #ff385c;
+  background-color: #106429;
 }
 
 footer p {
@@ -116,4 +145,99 @@ footer p {
   padding: 20px;
 }
 
+ul#menu{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
 /* -------  Media Query ------- */
+@media all and (max-width:350px){
+  .logo{
+    font-size: 45px;
+}
+
+  ul#menu{
+    font-size: 20px;
+  }
+}
+
+
+@media all and (min-width:351px){
+  ul#menu{
+    font-size: 25px;
+    padding-bottom: 20px
+  }
+
+  .logo{
+    font-size: 70px;
+  }
+}
+
+@media all and (min-width: 768px){
+  ul#menu{
+    font-size: 25px;
+  } 
+  #host h2{
+    font-size: 30px;
+  }
+  #host p{
+    font-size: 20px;
+  }
+  #host ul{
+    font-size: 20px;
+    text-align: center;
+  }
+  img{
+    scale: 75%;
+  }
+
+  #ideas h3{
+    text-align: center;
+    font-size: 60px;
+
+  }
+  #ideas h2{
+    text-align: center;
+    font-size: 75px;
+    padding-top: 20px;
+
+  }
+
+  #about h2{
+    font-size: 50px;
+    margin-top: 60px;
+  }
+
+  #about p{
+    font-size: 28px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form div {
+    flex-direction: column;
+    width: 15%;
+  }
+
+  form{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  form button {
+    width: 20%;
+  }
+
+  form div input, form div select {
+    width: 95%;
+    font-size: 90%;
+  }
+}
