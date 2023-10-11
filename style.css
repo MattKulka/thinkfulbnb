@@ -27,12 +27,8 @@ section {
 
 section.alternate-background {
   
-  background-color: #040507;
-  color: #f7f3f3;
-}
-#about p{
-  font-size: 20px;
-  padding-top: 10px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 main img {
@@ -136,7 +132,7 @@ form button {
 /* -------  Footer ------- */
 
 footer {
-  background-color: #106429;
+  background-color: #0e5c31;
 }
 
 footer p {
@@ -175,45 +171,24 @@ ul#menu{
 }
 
 @media all and (min-width: 768px){
-  ul#menu{
-    font-size: 25px;
-  } 
-  #host h2{
-    font-size: 30px;
-  }
-  #host p{
-    font-size: 20px;
-  }
-  #host ul{
-    font-size: 20px;
-    text-align: center;
-  }
+  
+  
   img{
     scale: 75%;
   }
 
   #ideas h3{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 
   }
   #ideas h2{
     text-align: center;
-    font-size: 75px;
+    font-size: 50px;
     padding-top: 20px;
 
   }
 
-  #about h2{
-    font-size: 50px;
-    margin-top: 60px;
-  }
-
-  #about p{
-    font-size: 28px;
-    padding-top: 10px;
-    text-align: center;
-  }
 
   header{
     display: flex;
@@ -240,4 +215,26 @@ ul#menu{
     width: 95%;
     font-size: 90%;
   }
+ 
+
+  #host{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #host div, #host img{
+    width: 50%;
+  }
+  
+  #about {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  #about img {
+    width: 40%;
+  }
+
 }
