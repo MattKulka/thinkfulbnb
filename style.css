@@ -80,41 +80,43 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+#menu{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 /* -------  Search Form ------- */
+
 form {
-  border: 2px double rgb(0, 0, 0);
+  border: 2px solid #085321;
   padding: 10px;
 }
 
 form label {
   font-weight: bold;
-  color: white;
 }
 
 form select,
 form input {
-
   margin-bottom: 20px;
   width: 180px;
 }
 
 form button {
-  background-color: rgb(0, 0, 0);
+  background-color: #0d5e3c;
   border: none;
-  color: #fcfcfc;
+  color: #fff;
   font-size: 24px;
   padding: 15px;
   width: 100%;
 }
 
-#menu{
-  display: flex;
-}
-
 #stay{
-  background-color: #5f6063;
+  background-color: #ffffff;
 }
 
+/* -------  Ideas------- */
 #ideas{
   background-color: #5f6063;
 }
@@ -141,16 +143,22 @@ footer p {
   padding: 20px;
 }
 
-ul#menu{
+#menu{
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+
 }
 
 /* -------  Media Query ------- */
-@media all and (max-width:350px){
+@media all and (max-width:400px){
   .logo{
-    font-size: 45px;
+    font-size: 54px;
 }
 
   ul#menu{
@@ -159,36 +167,7 @@ ul#menu{
 }
 
 
-@media all and (min-width:351px){
-  ul#menu{
-    font-size: 25px;
-    padding-bottom: 20px
-  }
-
-  .logo{
-    font-size: 70px;
-  }
-}
-
 @media all and (min-width: 768px){
-  
-  
-  img{
-    scale: 75%;
-  }
-
-  #ideas h3{
-    text-align: center;
-    font-size: 40px;
-
-  }
-  #ideas h2{
-    text-align: center;
-    font-size: 50px;
-    padding-top: 20px;
-
-  }
-
 
   header{
     display: flex;
@@ -196,45 +175,53 @@ ul#menu{
     align-items: center;
   }
 
-  form div {
+  form div{
     flex-direction: column;
     width: 15%;
+
+  }
+
+  form button{
+    width: 20%;
   }
 
   form{
     display: flex;
-    gap: 10px;
     justify-content: space-between;
+    align-items: center;
   }
 
-  form button {
-    width: 20%;
+  form input, form select{
+    width: 100%;
   }
 
-  form div input, form div select {
-    width: 95%;
-    font-size: 90%;
-  }
- 
-
-  #host{
+  #about div {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-
-  #host div, #host img{
-    width: 50%;
+  #about img{
+    width: 25%;
   }
-  
-  #about {
+
+  .row{
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
   }
 
-  #about img {
-    width: 40%;
+  .row div{
+    flex: 1;
+  }
+
+  #host{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #host div{
+    flex: 1;
+
   }
 
 }
