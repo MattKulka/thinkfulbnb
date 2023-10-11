@@ -10,11 +10,11 @@ The UX designer provided you with the following user interface mockups:
 
 ### Mobile view
 
-![](images/mobile-view.jpg)
+![](images/mobile-view.jpeg)
 
 ### Desktop view
 
-![](images/desktop-view.jpg)
+![](images/desktop-view.jpeg)
 
 
 
