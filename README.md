@@ -10,11 +10,11 @@ The UX designer provided you with the following user interface mockups:
 
 ### Mobile view
 
-![](images/Thinkfulbnb-mobile.png)
+![](images/mobile-view.jpg)
 
 ### Desktop view
 
-![](images/Thinkfulbnb-desktop.png)
+![](images/desktop-view.jpg)
 
 
 
